@@ -1,0 +1,254 @@
+/* Parâmetro 'clearfix' */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* contâiner principal */
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fffedb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffeb3b;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.cart img {
+    max-height: 30px;
+    margin-right: 5px;
+    filter: saturate(1) invert(1) sepia(100%) hue-rotate(72deg) brightness(180%) contrast(110%);
+}
+
+/* corpo do site */
+main {
+    padding: 10px;
+}
+
+.banner {
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #fffedb;
+}
+
+.subBanner {
+    color: black;
+    text-align: left;
+}
+
+.subBanner h1 {
+    font-size: 3em;
+}
+
+.subBanner p {
+    font-size: 1.2em;
+}
+
+.subBanner .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+}
+
+.subBanner .btn:hover {
+    background-color: #45a049;
+    transition: all 1000ms ease;
+    transform: scale(1.1);
+}
+
+.produtosDestaque {
+    text-align: center;
+}
+
+.produtosDestaque h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    max-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #382c2c;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #382c2c;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.produto p {
+    font-size: 1em;
+    margin: 10px;
+    text-align: justify;
+}
+
+.produto .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.produto .btn:hover {
+    background-color: #45a049;
+    transition: all 1000ms ease;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.conteudoRodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.conteudoRodape h3 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.conteudoRodape p, .conteudoRodape a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.conteudoRodape a:hover {
+    text-decoration: underline;
+}
+
+.fundoRodape {
+    margin-top: 20px;
+    border-top: 1px solid #777;
+    padding-top: 10px;
+}
+
+.fundoRodape p {
+    margin: 0;
+}
+
+/* seção links úteis */
+.secaoLinks ul li {
+    text-align: left;
+}
+
+/* seção contato */
+.secaoContato p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secaoContato img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    filter: invert(1);
+}
+
+/* seção social */
+.secaoSocial a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.secaoSocial img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
+}
+
+/* sobre.html */
+.btnSobre {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btnSobre:hover {
+    background-color: #45a049;
+    transition: all 1000ms ease;
+    transform: scale(1.1);
+}

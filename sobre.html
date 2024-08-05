@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Direto da Roça: Alimentos Orgânicos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header id="header" class="clearfix">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo/Direto da roça.png" alt="Logo da Loja de Produtos Orgânicos">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#">Produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="cart">
+            <a href="#"><img src="img/carrinho.svg" alt="Carrinho de Compras"></a>
+            <span>Meu Carrinho</span>
+        </div>
+    </header>
+    <!-- Corpo do site! -->
+    <main id="main" class="clearfix">
+        <section class="sobre">
+            <h1>Sobre Nós</h1>
+            <p>Bem-vindo à <strong>Direto da Roça</strong>, sua fonte de alimentos orgânicos frescos e de qualidade. Nossa missão é fornecer produtos saudáveis e sustentáveis, diretamente da nossa fazenda para a sua mesa.</p>
+            <h2>Nossa História</h2>
+            <p>A <strong>Direto da Roça</strong> foi fundada em 2010 com o objetivo de conectar consumidores a produtos orgânicos locais. Iniciamos com uma pequena fazenda familiar e hoje nos orgulhamos de ser uma referência em produção sustentável e de qualidade.</p>
+            <h2>Nosso Compromisso</h2>
+            <p>Estamos comprometidos com práticas agrícolas sustentáveis que respeitam o meio ambiente e promovem a biodiversidade. Todos os nossos produtos são cultivados sem o uso de agrotóxicos e com técnicas que preservam a saúde do solo e da água.</p>
+            <h2>O Que Oferecemos</h2>
+            <ul>
+                <li>Frutas e verduras frescas</li>
+                <li>Produtos de mercearia orgânica</li>
+                <li>Cestas semanais de produtos selecionados</li>
+                <li>Entrega direta na sua casa</li>
+            </ul>
+            <h2>Visite Nossa Fazenda</h2>
+            <p>Você está convidado a conhecer nossa fazenda e ver de perto como produzimos nossos alimentos. Agende uma visita e venha experimentar a qualidade e frescor direto da fonte!</p>
+            <a href="#" class="btnSobre">Agendar Visita</a>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <div class="conteudoRodape">
+            <div class="secaoLinks">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="secaoContato">
+                <h3>Contato</h3>
+                <p><img src="img/chamada-telefonica.svg" alt="Telefone">+55 (42) 99959-2457</p>
+                <p><img src="img/ponto-do-envelope.svg" alt="Email">contatoempresarial@diretodaroca.com</p>
+            </div>
+            <div class="secaoSocial">
+                <h3>Redes Sociais</h3>
+                <a href="https://facebook.com"><img src="img/facebook.svg" alt="Facebook"></a>
+                <a href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a>
+                <a href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="fundoRodape">
+            <p>&copy; 2024 Direto da Roça. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        window.onload = function() {
+            var item1 = document.getElementById('header');
+            var item2 = document.getElementById('main');
+            var maxHeight = item1.clientHeight;
+            item2.style.paddingTop = (maxHeight+10) + 'px';
+        };
+    </script>
+</body>
+</html>
