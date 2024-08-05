@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - Direto da Roça: Alimentos Orgânicos</title>
+    <title>Contato - Direto da Roça: Alimentos Orgânicos</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
 </head>
@@ -18,7 +18,7 @@
             <a href="index.html">Início</a>
             <a href="#">Produtos</a>
             <a href="sobre.html">Sobre nós</a>
-            <a href="#">Contato</a>
+            <a href="contato.html">Contato</a>
         </nav>
         <div class="cart">
             <a href="#"><img src="img/carrinho.svg" alt="Carrinho de Compras"></a>
@@ -27,27 +27,21 @@
     </header>
     <!-- Corpo do site! -->
     <main id="main" class="clearfix">
-        <section class="sobre">
-            <h1>Sobre Nós</h1>
-            <p>Bem-vindo à <strong>Direto da Roça</strong>, sua fonte de alimentos orgânicos frescos e de qualidade. Nossa missão é fornecer produtos saudáveis e sustentáveis, diretamente da nossa fazenda para a sua mesa.</p>
-            <h2>Nossa História</h2>
-            <p>A <strong>Direto da Roça</strong> foi fundada em 2010 com o objetivo de conectar consumidores a produtos orgânicos locais. Iniciamos com uma pequena fazenda familiar e hoje nos orgulhamos de ser uma referência em produção sustentável e de qualidade.</p>
-            <h2>Nosso Compromisso</h2>
-            <p>Estamos comprometidos com práticas agrícolas sustentáveis que respeitam o meio ambiente e promovem a biodiversidade. Todos os nossos produtos são cultivados sem o uso de agrotóxicos e com técnicas que preservam a saúde do solo e da água.</p>
-            <h2>O Que Oferecemos</h2>
-            <ul>
-                <li>Frutas e verduras frescas</li>
-                <li>Produtos de mercearia orgânica</li>
-                <li>Cestas semanais de produtos selecionados</li>
-                <li>Entrega direta na sua casa</li>
-            </ul>
-            <h2>Visite Nossa Fazenda</h2>
-            <p>Você está convidado a conhecer nossa fazenda e ver de perto como produzimos nossos alimentos. Agende uma visita e venha experimentar a qualidade e frescor direto da fonte!</p>
-            <a href="#" class="btnSobre">Agendar Visita</a>
-        </section>
-        <section class="concursoAgrinho">
-            <h1>Feito para: </h1>
-            <img src="img/concursoAgrinho.jpg" alt="Agrinho">
+        <section class="contato">
+            <h1>Contato</h1>
+            <p>Entre em contato conosco preenchendo o formulário abaixo. Teremos o maior prazer em responder suas perguntas e ouvir suas sugestões.</p>
+            <form action="enviar_mensagem.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
         </section>
     </main>
     <!-- Rodapé -->
